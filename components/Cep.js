@@ -1,0 +1,21 @@
+import React from 'react';
+import { StyleSheet, Text } from 'react-native';
+
+export default function Cep(props) {
+  return (
+	  <>
+	  	<Text style={styles.texto}> CEP: {props.data.cep} </Text>
+	  	<Text style={styles.texto}> Logadouro: {props.data.logadouro}</Text>
+	  	<Text style={styles.texto}> Bairro: {props.data.bairro}</Text>
+	  	<Text style={styles.texto}> Localidade: {props.data.localidade}</Text>
+	  	<Text style={styles.texto}> UF: {props.data.uf}</Text>
+	  </>
+  );
+}
+
+const styles = StyleSheet.create({
+  texto:{
+		marginTop: 20,
+		fontSize: 20
+	}
+});
